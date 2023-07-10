@@ -1,0 +1,79 @@
+.comment_section {
+  padding: 8px 0;
+  .comment_container {
+    text-align: center;
+  }
+  .comment_box {
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      @media only screen and (min-width: 768px) and (max-width: 1024px) {
+        width: 21px;
+        height: 21px;
+      }
+      @media only screen and (min-width: 1025px) and (max-width: 1600px) {
+        width: 24px;
+        height: 24px;
+      }
+      @media only screen and (min-width: 1601px) {
+        width: 30px;
+        height: 30px;
+      }
+      border-radius: 50%;
+      margin-right: 5px;
+      object-fit: cover;
+    }
+
+    .comment_input_box {
+      position: relative;
+
+      input {
+        border: none;
+        background: white;
+        border-bottom: 1px solid #ccc;
+        margin-left: 4px;
+
+        @media only screen and (min-width: 768px) and (max-width: 1024px) {
+          width: 285px;
+          height: 20px;
+        }
+        @media only screen and (min-width: 1025px) and (max-width: 1600px) {
+          width: 379px;
+          height: 25px;
+        }
+        @media only screen and (min-width: 1601px) {
+          width: 400px;
+          height: 33px;
+        }
+      }
+      input:focus {
+        outline: none;
+        border-bottom: 3px solid #ccc;
+      }
+      .submit-comment_button {
+        position: absolute;
+        background: none;
+        border: none;
+        right: 0;
+        color: #0095f6;
+        font-weight: 700;
+        font-size: 16px;
+        padding: 0;
+      }
+
+      .submit-comment_button:hover {
+        color: rgb(0, 55, 107);
+      }
+    }
+
+    .emoji_picker_button {
+      border: none;
+      background: none;
+      cursor: pointer;
+    }
+  }
+}

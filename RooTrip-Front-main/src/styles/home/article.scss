@@ -1,0 +1,220 @@
+.Main_content {
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  position: absolute;
+  top: 80px;
+  background: white;
+  z-index: 101;
+  right: 10%;
+
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    width: 375px;
+  }
+  @media only screen and (min-width: 1025px) and (max-width: 1600px) {
+    width: 456px;
+  }
+  @media only screen and (min-width: 1601px) {
+    width: 500px;
+  }
+
+  .article_head {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 8px 0;
+
+    .Con_pro {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 4px;
+
+      position: absolute;
+      top: 0;
+      left: 8px;
+
+      .profile_image {
+        display: inline;
+        width: 28px;
+        height: 28px;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 50%;
+        }
+      }
+
+      .profile_name {
+        margin: 0;
+        font-size: 0.8rem;
+        font-weight: 700;
+        padding-bottom: 4px;
+      }
+    }
+
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+      height: 23px;
+    }
+    @media only screen and (min-width: 1025px) and (max-width: 1600px) {
+      height: 23px;
+    }
+    @media only screen and (min-width: 1601px) {
+      height: 30px;
+    }
+
+    .photo_page {
+      font-weight: bold;
+      color: rgb(165, 165, 165);
+      letter-spacing: 15px;
+    }
+
+    .close_button {
+      position: absolute;
+      top: 0;
+      right: 12px;
+      width: 24px;
+      height: 24px;
+      border: 1px solid #ccc;
+      background: none;
+      font-size: 16px;
+      font-weight: 700;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    .close_button:hover {
+      background: #ccc;
+    }
+  }
+  .Content {
+    position: relative;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+      height: 212px;
+    }
+    @media only screen and (min-width: 1025px) and (max-width: 1600px) {
+      height: 260px;
+    }
+    @media only screen and (min-width: 1601px) {
+      height: 285px;
+    }
+  }
+  .addr {
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+      height: 28px;
+    }
+    @media only screen and (min-width: 1025px) and (max-width: 1600px) {
+      height: 28px;
+    }
+    @media only screen and (min-width: 1601px) {
+      height: 40px;
+    }
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    span {
+      @media only screen and (min-width: 768px) and (max-width: 1024px) {
+        font-size: 11px;
+      }
+      @media only screen and (min-width: 1025px) and (max-width: 1600px) {
+        font-size: 12px;
+      }
+      @media only screen and (min-width: 1601px) {
+        font-size: 15px;
+      }
+    }
+  }
+  .article {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 270px;
+
+    .header-bar {
+      font-size: 16px;
+      margin: 8px 0;
+      padding: 0 8px 8px;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #f0f0f0;
+
+      .left-bar {
+        display: flex;
+        flex-direction: column;
+
+        .title {
+          margin: 0;
+          font-size: 18px;
+        }
+
+        .other-info {
+          display: flex;
+          flex-direction: row;
+
+          gap: 16px;
+
+          font-size: 12px;
+          color: #ccc;
+        }
+      }
+
+      .side-bar {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        button {
+          border: none;
+          background: white;
+          padding: 0;
+
+          img {
+            cursor: pointer;
+
+            width: 36px;
+            height: 36px;
+            object-fit: contain;
+          }
+        }
+      }
+    }
+
+    .content {
+      padding: 0 8px;
+
+      overflow-y: auto;
+      height: 180px;
+
+      p {
+        margin: 0;
+      }
+    }
+
+    .content-more-button {
+      position: absolute;
+      bottom: 0;
+      left: 5px;
+
+      display: inline-block;
+      border: none;
+      background: none;
+      color: #ccc;
+      font-size: 12px;
+      cursor: pointer;
+    }
+
+    .content-more-button:hover {
+      color: #737373;
+    }
+  }
+}

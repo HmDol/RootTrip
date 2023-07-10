@@ -1,0 +1,28 @@
+.registerTitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid black;
+  text-align: center;
+  padding: 12px 0;
+  text-decoration: none;
+  margin-bottom: 50px;
+
+  .goBeforePage {
+    display: flex;
+    align-items: center;
+
+    color: black;
+    img {
+      width: 100px;
+      cursor: pointer;
+    }
+    h2 {
+      cursor: pointer;
+      padding-left: 15px;
+      font-size: 35px;
+      font-weight: bold;
+    }
+  }
+}

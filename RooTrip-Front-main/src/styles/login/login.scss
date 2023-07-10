@@ -1,0 +1,271 @@
+button {
+  cursor: pointer;
+}
+.map-container {
+  .whole_page {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.pages {
+  position: absolute;
+  background-color: white;
+  text-align: center;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+
+  z-index: 1;
+  transform: scale(1.3);
+  /* 데스크탑 브라우저 가로*/
+  @media only screen and (min-width: 780px) and (max-width: 1024px) {
+    width: 200px;
+    max-height: 350px;
+    right: 145px;
+  }
+  @media only screen and (min-width: 1025px) and (max-width: 1600px) {
+    width: 240px;
+    right: 215px;
+    max-height: 450px;
+  }
+  @media only screen and (min-width: 1601px) {
+    right: 288px;
+    width: 300px;
+    max-height: 500px;
+  }
+
+  .LoginPage {
+    width: 100%;
+    height: 100%;
+
+    .Login_logo {
+      @media only screen and (min-width: 780px) and (max-width: 1024px) {
+        width: 50px;
+      }
+      @media only screen and (min-width: 1025px) and (max-width: 1600px) {
+        width: 70px;
+      }
+      @media only screen and (min-width: 1601px) {
+        width: 85px;
+      }
+    }
+
+    .Logotext {
+      color: #bbb;
+
+      .text1 {
+        @media only screen and (min-width: 780px) and (max-width: 1024px) {
+          font-size: 0.5rem;
+        }
+        @media only screen and (min-width: 1025px) {
+          font-size: 0.8rem;
+        }
+      }
+      .text2 {
+        @media only screen and (min-width: 780px) and (max-width: 1024px) {
+          font-size: 0.5rem;
+        }
+        @media only screen and (min-width: 1025px) {
+          font-size: 0.8rem;
+        }
+        font-weight: bold;
+      }
+    }
+
+    .login_error {
+      color: rgb(249, 63, 63);
+      font-weight: bold;
+      margin-bottom: 12px;
+      @media only screen and (min-width: 1601px) {
+        font-size: 16px;
+      }
+      @media only screen and (min-width: 1025px) and (max-width: 1600px) {
+        font-size: 12px;
+      }
+      @media only screen and (min-width: 768px) and (max-width: 1024px) {
+        font-size: 10px;
+      }
+      font-size: 17px;
+    }
+
+    .login_buttons {
+      .loginbtn {
+        border: powderblue;
+        color: white;
+        font-weight: bold;
+        border-radius: 5px;
+
+        background-color: #2743a6;
+        margin: 8px;
+        @media only screen and (min-width: 768px) and (max-width: 1024px) {
+          padding: 5px 67px;
+          font-size: 6px;
+        }
+        @media only screen and (min-width: 1025px) and (max-width: 1600px) {
+          padding: 8px 89px 8px 89px;
+          font-size: 11px;
+        }
+        @media only screen and (min-width: 1601px) {
+          padding: 8px 106px 8px 106px;
+          font-size: 17px;
+        }
+      }
+    }
+
+    .login_index {
+      @media only screen and (min-width: 1025px) {
+        padding: 4px 0;
+      }
+      @media only screen and (min-width: 1601px) {
+        padding: 10px 0;
+      }
+      .logintext {
+        border: 1px solid #f5f5f5;
+        background-color: #eeeeee;
+        @media only screen and (min-width: 768px) and (max-width: 1024px) {
+          font-size: 6px;
+          padding: 4px 35px 4px 7px;
+        }
+        @media only screen and (min-width: 1025px) and (max-width: 1600px) {
+          font-size: 11px;
+          padding: 6px 67px 6px 8px;
+        }
+        @media only screen and (min-width: 1601px) {
+          font-size: 14px;
+          padding: 8px 86px 8px 10px;
+        }
+        border-radius: 1px;
+        margin: 2% 0;
+      }
+      .logintext:focus {
+        outline: none;
+        border: 1px solid #aaa;
+      }
+    }
+
+    .social_login {
+      @media only screen and (min-width: 1025px) and (max-width: 1600px) {
+        padding: 5px 0;
+      }
+      @media only screen and (min-width: 1601px) {
+        padding: 8px 0;
+      }
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      gap: 16px;
+
+      button {
+        background: none;
+        text-align: center;
+        border: white;
+        font-weight: bold;
+
+        img {
+          border-radius: 50% !important;
+
+          object-fit: contain;
+        }
+      }
+      .kakaobtn > img {
+        @media only screen and (min-width: 768px) and (max-width: 1024px) {
+          width: 23px;
+        }
+        @media only screen and (min-width: 1025px) and (max-width: 1600px) {
+          width: 30px;
+        }
+        @media only screen and (min-width: 1601px) {
+          width: 36px;
+        }
+      }
+      .naverbtn > img {
+        @media only screen and (min-width: 768px) and (max-width: 1024px) {
+          width: 21px;
+        }
+        @media only screen and (min-width: 1025px) and (max-width: 1600px) {
+          width: 27px;
+        }
+        @media only screen and (min-width: 1601px) {
+          width: 32px;
+        }
+      }
+      .googlebtn > img {
+        @media only screen and (min-width: 768px) and (max-width: 1024px) {
+          width: 19px;
+        }
+        @media only screen and (min-width: 1025px) and (max-width: 1600px) {
+          width: 23px;
+        }
+        @media only screen and (min-width: 1601px) {
+          width: 28px;
+        }
+      }
+    }
+  }
+
+  .AccountPage {
+    @media only screen and (min-width: 1025px) and (max-width: 1600px) {
+      padding: 4px 4px;
+      font-size: 0.7rem;
+    }
+    @media only screen and (min-width: 1601px) {
+      padding: 8px 4px;
+    }
+
+    .account-box {
+      a {
+        text-decoration: none;
+        color: rgb(0, 149, 246);
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+      @media only screen and (min-width: 768px) and (max-width: 1024px) {
+        padding-bottom: 5px;
+      }
+      @media only screen and (min-width: 1025px) {
+        padding-bottom: 16px;
+      }
+
+      span {
+        font-size: 0.7rem;
+      }
+    }
+
+    .register-box {
+      border-top: 1px solid #ccc;
+      margin: 0 16px;
+
+      @media only screen and (min-width: 768px) and (max-width: 1024px) {
+        font-size: 11px;
+        padding: 11px 0;
+      }
+      @media only screen and (min-width: 1025px) {
+        padding: 16px 0;
+        font-size: 0.7rem;
+      }
+      .gosignupbtn {
+        border: none;
+        background: none;
+        font-size: 0.7rem;
+        color: rgb(0, 149, 246);
+        @media only screen and (min-width: 768px) and (max-width: 1024px) {
+          margin-top: 5px;
+        }
+        @media only screen and (min-width: 1025px) {
+          margin: 0;
+        }
+      }
+
+      .gosignupbtn:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

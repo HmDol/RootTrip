@@ -1,0 +1,18 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "useBuiltIns": "usage", // 폴리필 삽입 옵션 usage = 실제 사용한 폴리필 삽입
+        "corejs": 3 // corejs 버전
+      }
+    ],
+    ["@babel/preset-react", { "runtime": "automatic" }],
+    "@babel/preset-typescript"
+  ],
+  "plugins": [
+    "@babel/syntax-dynamic-import",
+    "@babel/plugin-transform-runtime",
+    "@babel/plugin-proposal-class-properties"
+  ]
+}

@@ -1,0 +1,213 @@
+.modal-post-more {
+  top: 7% !important;
+  left: 20% !important;
+
+  .modal-post {
+    display: flex;
+    flex-direction: row;
+
+    .modal-left {
+      display: flex;
+      flex-direction: column;
+      border-right: 1px solid #ccc;
+
+      .modal-photos {
+        width: 432px;
+        height: 592px;
+        margin: 12px 12px 4px;
+
+        .modal-photo {
+          width: 100%;
+          height: 100%;
+
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+
+      .modal-other-info {
+        height: 36px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 12px;
+
+        .modal-other-left {
+          display: flex;
+
+          gap: 12px;
+
+          span {
+            font-size: 12px;
+          }
+        }
+
+        .modal-other-right {
+          display: flex;
+
+          button {
+            border: none;
+            background: none;
+            padding: 0 2px;
+
+            img {
+              width: 32px;
+              object-fit: cover;
+              vertical-align: middle;
+            }
+          }
+        }
+      }
+    }
+
+    .modal-right {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+
+      .modal-user {
+        display: inline-flex;
+        align-items: center;
+        gap: 4px;
+        margin: 12px 0 0 12px;
+
+        img {
+          width: 32px;
+          height: 32px;
+          border-radius: 50%;
+          object-fit: contain;
+          line-height: 12px;
+        }
+
+        .profile_name {
+          margin: 0;
+          font-size: 0.9rem;
+          font-weight: 700;
+        }
+      }
+
+      .modal-main-content {
+        flex-grow: 1;
+
+        position: relative;
+        width: 456px;
+        margin: 8px 0;
+
+        display: flex;
+        flex-direction: column;
+
+        .modal-article {
+          height: 280px;
+          border-bottom: 1px solid #ccc;
+          padding: 0 8px;
+
+          .modal-title {
+            margin: 4px 0;
+            font-size: 18px;
+          }
+
+          .modal-content {
+            font-size: 16px;
+            height: 240px;
+            overflow-y: scroll;
+
+            p {
+              margin: 0;
+            }
+          }
+        }
+
+        .modal-comments {
+          height: 259px;
+          overflow-y: scroll;
+
+          .modal-comments-tot-count-box {
+            margin: 4px 4px 8px;
+            padding: 8px 0;
+            font-size: 12px;
+            font-weight: 700;
+          }
+
+          .modal-comment {
+            position: relative;
+            border-bottom: 1px solid #f0f0f0;
+            padding-bottom: 4px;
+
+            .modal-comment-user {
+              display: inline-flex;
+              align-items: center;
+              gap: 4px;
+
+              position: absolute;
+              top: 4px;
+              left: 8px;
+
+              img {
+                width: 24px;
+              }
+
+              .profile_name {
+                margin: 0;
+                font-size: 0.8rem;
+                font-weight: 700;
+              }
+
+              .modal-comment-createAt {
+                font-size: 10px;
+                color: #ccc;
+              }
+            }
+
+            .modal-comment-box {
+              width: 396px;
+              padding: 36px 12px 0;
+
+              .modal-comment-content {
+                margin: 0;
+                font-size: 14px;
+                word-wrap: break-word;
+                padding: 4px 0;
+              }
+            }
+
+            .modal-comment-like {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+
+              position: absolute;
+              right: 15px;
+              bottom: 2px;
+
+              img {
+                width: 16px;
+              }
+              span {
+                font-size: 12px;
+              }
+            }
+          }
+
+          .comment-section {
+            padding: 8px 0 0;
+          }
+        }
+      }
+    }
+
+    .modal-post-close-button {
+      border: none;
+      background: none;
+
+      position: absolute;
+      top: 8px;
+      right: 8px;
+
+      font-size: 18px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+  }
+}

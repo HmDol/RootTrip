@@ -1,0 +1,114 @@
+.map-container {
+  position: fixed !important;
+  height: 100vh !important;
+  width: 100vw !important;
+  .ocean-container {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: #658dc6;
+  }
+
+  .mapboxgl-map {
+    z-index: 5;
+  }
+
+  .mapboxgl-canvas {
+    cursor: initial;
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  .map-marker-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 36px;
+    height: 36px;
+
+    cursor: initial;
+
+    img {
+      width: 100%;
+      height: 100%;
+
+      border: 3px solid white;
+      border-radius: 50%;
+      cursor: initial;
+    }
+
+    span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      position: absolute;
+      top: -15px;
+      left: 1px;
+
+      width: 100%;
+      height: 100%;
+
+      font-size: 24px;
+      font-weight: bold;
+      color: #152f8d;
+    }
+  }
+
+  .no-effect-marker {
+    border: 3px solid white !important;
+  }
+
+  .mapboxgl-marker {
+    top: -34px !important;
+    left: -11px !important;
+
+    svg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      cursor: pointer;
+
+      polygon {
+        border-radius: 50%;
+      }
+    }
+
+    .clicked {
+      border: 3px solid red !important;
+      fill: red !important;
+    }
+  }
+
+  .mapboxgl-marker:hover {
+    .map-marker-image > img {
+      border: 3px solid orange;
+    }
+  }
+
+  .bounce {
+    animation: bounce 2s ease-in-out infinite;
+  }
+
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(-8px);
+    }
+
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  .mapboxgl-ctrl-bottom-left,
+  .mapboxgl-ctrl-bottom-right {
+    display: none !important;
+  }
+}

@@ -1,0 +1,119 @@
+.modal {
+  top: 12%;
+  left: 30%;
+  transform: translate(-25%, -40%);
+}
+.modalChooseLoaction {
+  width: 800px;
+  height: 500px;
+  .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    background-color: #0095f6;
+    span {
+      color: white;
+      font-size: 21px;
+      font-weight: bold;
+    }
+
+    button {
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      border: 0;
+      position: absolute;
+      right: 20px;
+      font-size: 22px;
+    }
+  }
+  .modalContent {
+    display: flex;
+    margin-top: 20px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    max-height: 370px;
+
+    .wideLocation {
+      width: 250px;
+      display: flex;
+      flex-direction: column;
+      overflow-y: overlay;
+      object-fit: cover;
+      padding-right: 25px;
+
+      .wideTitle {
+        display: flex;
+        justify-content: center;
+        background-color: #bbb;
+        margin-bottom: 10px;
+
+        .wideTitleTxt {
+          height: 40px;
+          display: flex;
+          align-items: center;
+        }
+      }
+      .locationDetails {
+        overflow-y: overlay;
+        object-fit: cover;
+        margin-right: -25px;
+        .cityNames {
+          width: 91%;
+          height: 40px;
+          border: 1px solid #ccc;
+          border-radius: 3px;
+          background-color: white;
+          margin-bottom: 10px;
+        }
+      }
+    }
+    .smallLocation {
+      width: 350px;
+      display: flex;
+      flex-direction: column;
+      .smallTitle {
+        display: flex;
+        justify-content: center;
+        width: 97.5%;
+        background-color: #bbb;
+        margin-bottom: 10px;
+        .smallTitleTxt {
+          height: 40px;
+          display: flex;
+          align-items: center;
+        }
+      }
+      .locationDetails {
+        overflow-y: overlay;
+        object-fit: cover;
+        margin-right: -25px;
+        .smallCityNames {
+          width: 91%;
+          height: 40px;
+          border: 1px solid #ccc;
+          border-radius: 3px;
+          background-color: white;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+  footer {
+    button {
+      position: absolute;
+      right: 30px;
+      bottom: 15px;
+      width: 60px;
+      height: 30px;
+      background-color: #0095f6;
+      color: white;
+      font-weight: bold;
+      border: 0;
+      border-radius: 15px;
+      font-size: 16px;
+    }
+  }
+}

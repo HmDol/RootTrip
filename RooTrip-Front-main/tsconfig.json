@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    // TypeScript가 CommonJS 모듈 시스템과 ES 모듈 시스템 간의 호환성 문제를 자동으로 해결하는 옵션 ex) export =
+    "esModuleInterop": true,
+
+    // TypeScript에서 JSX를 사용하기 위한 플래그 설정
+    "jsx": "react",
+
+    // TypeScript에서 Alias 경로를 사용하기 위한 설정
+    "baseUrl": "./src",
+    "paths": {
+      "@assets/*": ["assets/*"],
+      "@components/*": ["components/*"],
+      "@config/*": ["config/*"],
+      "@constants/*": ["constants/*"],
+      "@hooks/*": ["hooks/*"],
+      "@pages/*": ["pages/*"],
+      "@services/*": ["services/*"],
+      "@store/*": ["store/*"],
+      "@styles/*": ["styles/*"],
+      "@utils/*": ["utils/*"]
+    }
+  },
+
+  // ** 모든 하위 디렉토리를 의미
+  // *.ts, *.tsx는 Typescript 소스 코드 파일을 의미
+  "include": ["src/**/*.ts", "src/**/*.tsx"]
+}

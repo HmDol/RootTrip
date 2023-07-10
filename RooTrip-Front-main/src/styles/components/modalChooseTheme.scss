@@ -1,0 +1,90 @@
+.modal {
+  top: 12%;
+  left: 30%;
+  transform: translate(-25%, -40%);
+}
+.modalChooseTheme {
+  width: 650px;
+  max-height: 700px;
+  .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    background-color: #0095f6;
+    span {
+      color: white;
+      font-size: 21px;
+      font-weight: bold;
+    }
+    button {
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      border: 0;
+      position: absolute;
+      right: 20px;
+      font-size: 22px;
+    }
+  }
+
+  .modalContent {
+    display: flex;
+    margin-top: 20px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 450px;
+    .bigTheme {
+      width: 150px;
+      display: flex;
+      flex-direction: column;
+      .title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 40px;
+        background-color: #aaa;
+        border-radius: 3px;
+        margin-bottom: 10px;
+        span {
+          font-size: 15px;
+          color: black;
+          font-weight: 200;
+        }
+      }
+      .themeDetails {
+        margin-bottom: 10px;
+        overflow-y: overlay;
+        object-fit: cover;
+        margin-right: -25px;
+        .themeNames {
+          width: 86%;
+          height: 40px;
+          border: 1px solid #ccc;
+          border-radius: 3px;
+          background-color: white;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+  footer {
+    height: 65px;
+
+    button {
+      position: absolute;
+      right: 30px;
+      bottom: 15px;
+      width: 60px;
+      height: 30px;
+      background-color: #0095f6;
+      color: white;
+      font-weight: bold;
+      border: 0;
+      border-radius: 15px;
+      font-size: 16px;
+    }
+  }
+}

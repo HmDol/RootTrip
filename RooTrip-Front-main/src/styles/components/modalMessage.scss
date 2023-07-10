@@ -1,0 +1,23 @@
+.modal {
+  top: 12%;
+  left: 40%;
+  transform: translate(-25%, -40%);
+
+  .modal-message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #7ffe96;
+    width: 276px;
+    height: 96px;
+    border-radius: 15px;
+
+    p {
+      color: #ffffff;
+      font-size: 16px;
+      font-weight: 700;
+      padding: 0 18px;
+      text-align: center;
+    }
+  }
+}
